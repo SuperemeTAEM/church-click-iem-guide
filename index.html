@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Church Click IEM Windows 다운로드와 같은 Wi-Fi에서 스마트폰을 연결하는 방법">
+<title>Church Click IEM 사용 설명서</title>
+<link rel="icon" href="app.png">
+<style>
+:root{color-scheme:dark;font:16px/1.65 system-ui,sans-serif;background:#0b1018;color:#ecf5fa}
+*{box-sizing:border-box}main{max-width:780px;margin:auto;padding:24px 18px 56px}
+header{display:flex;align-items:center;gap:12px}header img{width:42px;height:42px}h1,h2,h3{line-height:1.3}h1{font-size:clamp(24px,5vw,36px)}h2{margin-top:0}
+nav{display:flex;gap:16px;flex-wrap:wrap;margin:18px 0}a{color:#8ff7f9}a:focus-visible{outline:2px solid #ffda80;outline-offset:4px}
+section{background:#151d29;border:1px solid #2a3747;border-radius:18px;padding:clamp(16px,4vw,28px);margin-top:16px}
+p,li,dd{color:#c1d0dd}li+li,dt{margin-top:.7em}dt{font-weight:700}dd{margin-left:0}.download{display:inline-block;background:#5de5e8;color:#0b1920;border-radius:12px;padding:12px 16px;font-weight:700;text-decoration:none;margin:4px 14px 4px 0}
+</style>
+</head>
+<body><main>
+<header><img src="app.png" alt=""><h1>Church Click IEM</h1></header>
+<p>Windows PC에서 메트로놈을 제어하고, 같은 Wi-Fi에 연결한 휴대폰 브라우저에서 클릭을 듣습니다.</p>
+<nav aria-label="설명서 목차"><a href="#download">다운로드</a><a href="#setup">연결과 재생</a><a href="#help">문제 해결</a></nav>
+<section id="download">
+<h2>Windows v0.7.3</h2>
+<a class="download" href="church_click_iem_v0_7_3_windows_x64.zip" download>Windows x64 다운로드</a>
+<a href="church_click_iem_v0_7_3_source.zip" download>소스 ZIP</a>
+<p>Windows PC 한 대, 휴대폰과 유선 이어폰, 팀 전용 Wi-Fi를 준비하세요. 이 페이지에서 실행 파일을 내려받고 PC에서 실행하면 휴대폰 수신 주소가 생성됩니다.</p>
+</section>
+<section id="setup">
+<h2>연결과 재생</h2>
+<ol>
+<li><strong>PC에서 실행</strong> — Windows ZIP을 모두 압축 해제하고 <code>ChurchClickIEM.exe</code>를 엽니다.</li>
+<li><strong>같은 Wi-Fi에 연결</strong> — PC와 휴대폰을 팀 전용 Wi-Fi에 연결합니다.</li>
+<li><strong>QR과 참가 코드 확인</strong> — PC의 <strong>인이어 관리</strong>에서 Wi-Fi 인터페이스를 선택합니다. 휴대폰 카메라로 QR을 스캔하고 PC에 표시된 8자리 참가 코드를 입력합니다.</li>
+<li><strong>휴대폰 오디오 켜기</strong> — 유선 이어폰을 연결하고 파트명을 입력한 뒤 <strong>오디오 켜기</strong>를 누릅니다. 낮은 볼륨부터 시작하세요.</li>
+<li><strong>PC에서 시작</strong> — 설정에서 BPM과 박자, 음표를 고르고 적용합니다. 예배 모드에서 시작을 누르면 연결된 휴대폰에서 클릭이 재생됩니다.</li>
+</ol>
+<p>4·8·16·32분음표, 셋잇단음표, 첫 박 강조, 세트리스트와 기기별 지연 보정을 지원합니다.</p>
+</section>
+<section id="help">
+<h2>문제 해결</h2>
+<dl>
+<dt>QR을 열어도 접속이 안 돼요</dt><dd>PC 앱이 켜져 있는지, 같은 Wi-Fi인지, PC에서 선택한 주소가 해당 Wi-Fi 주소인지 확인하세요. 게스트 Wi-Fi는 기기 간 연결을 차단할 수 있습니다. Windows 방화벽에서 앱의 개인 네트워크 접근을 확인하세요.</dd>
+<dt>참가 코드가 맞지 않아요</dt><dd>PC 앱을 다시 열면 참가 코드가 바뀝니다. 인이어 관리에 표시된 최신 QR과 코드를 사용하세요. 시도 제한에 걸리면 1분 후 다시 입력하세요.</dd>
+<dt>소리가 안 나거나 클릭이 어긋나요</dt><dd>휴대폰에서 오디오를 켜고 유선 이어폰과 미디어 볼륨을 확인하세요. 브라우저를 열어 둔 상태에서 두 기기의 클릭을 비교하고 먼저 들리는 기기에 추가 지연을 적용하세요.</dd>
+</dl>
+<p>PC 1대와 스마트폰 2대를 같은 Wi-Fi에 연결한 사용자 확인에서는 체감 지연 없이 동작했습니다. 수신기 최대 8대의 장시간 동시 재생은 실기기 확인이 남아 있습니다.</p>
+<h3>네트워크 사용 범위</h3>
+<p>제어기 인증과 참가 코드가 적용되어 있습니다. 기기 간 통신은 암호화되지 않으므로 팀 전용 Wi-Fi에서 사용하세요. 참가 코드는 팀원에게만 공유하고 공유기의 포트 포워딩으로 인터넷에 노출하지 마세요.</p>
+</section>
+</main></body></html>
